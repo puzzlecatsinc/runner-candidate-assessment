@@ -1,0 +1,129 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: BossAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: c0dbf9fb6a0042c4db9f88433185dce3, type: 3}
+    - {fileID: 102900000, guid: 50f35b81339f7264c94714bacc579e0c, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 8bb40680fbbe8db4d901ab8bba7d2131, type: 3}
+  - {fileID: 21300000, guid: 46257de079d9a274ea237e0c9b5b400d, type: 3}
+  - {fileID: 21300000, guid: 89bf0d6125e82bb4390b4448cd38f714, type: 3}
+  - {fileID: 21300000, guid: 4fb955c19953991479e2d8554f42fd4b, type: 3}
+  - {fileID: 21300000, guid: e40a5cf173f19024f915f96ca173bcb1, type: 3}
+  - {fileID: 21300000, guid: 89b126a24a24f1c49b912bc97895066d, type: 3}
+  - {fileID: 21300000, guid: 4f5bd3b3bd808b849af5b0a09ac8aeb2, type: 3}
+  - {fileID: 21300000, guid: bda693042aaa6af4e9a0edb05c785f67, type: 3}
+  - {fileID: 21300000, guid: cf4a232461236d54c817732e62e92e49, type: 3}
+  - {fileID: 21300000, guid: 321eff34efcb971449b2954963cf6bbb, type: 3}
+  - {fileID: 21300000, guid: a2ed7e44721c0fa4097077ddbbdbe56b, type: 3}
+  - {fileID: 21300000, guid: 0cb4c474956599d428f12bf22f653870, type: 3}
+  - {fileID: 21300000, guid: ee6eef05c9fa7cc488439b50d7f0f4a9, type: 3}
+  - {fileID: 21300000, guid: 256da64506208d349883da9d8a504b9a, type: 3}
+  - {fileID: 21300000, guid: 1079eb45b6cdca9418f3b50aafc158e8, type: 3}
+  - {fileID: 21300000, guid: 951b77b5435d92645ae22fdcbfa6c821, type: 3}
+  - {fileID: 21300000, guid: f945b6d54658fa348a0fa50f183b9200, type: 3}
+  - {fileID: 21300000, guid: 2f66eca6bb95bfd4d83673fd510e8a24, type: 3}
+  - {fileID: 21300000, guid: 75cbc197e33d56e4495008f7481d2db2, type: 3}
+  - {fileID: 21300000, guid: 5104eaa7177e47641806471b73f7bb85, type: 3}
+  - {fileID: 21300000, guid: c8e526d74835d02418ccb8ee122a522e, type: 3}
+  - {fileID: 21300000, guid: 89f212680686a584187cde0188dc7a96, type: 3}
+  - {fileID: 21300000, guid: 966378d8c0706d44882eb9998714c533, type: 3}
+  - {fileID: 21300000, guid: 6f23fff8660768840950f9f897109cde, type: 3}
+  - {fileID: 21300000, guid: d67af889b38dc0d4fa061f463741da4d, type: 3}
+  - {fileID: 21300000, guid: 1f42e40abe22b424ca27136688775f75, type: 3}
+  - {fileID: 21300000, guid: e5093d0ae9bbb9c44bc04b8acfa455fe, type: 3}
+  - {fileID: 21300000, guid: adfbff6a0b34de644b23a82e5ec84ec3, type: 3}
+  - {fileID: 21300000, guid: ea211b9addf68604dbe3eef5ea40a675, type: 3}
+  - {fileID: 21300000, guid: 6d0fe5fa295e08840afd2b556fff0d52, type: 3}
+  - {fileID: 21300000, guid: c554bb1beec546f4e86fa6278e2c84ea, type: 3}
+  - {fileID: 21300000, guid: 6e1a166c2e3cd854397eefbc23580ad7, type: 3}
+  - {fileID: 21300000, guid: 7325e48c1d39e1348b852bb4e0c542fe, type: 3}
+  - {fileID: 21300000, guid: ea9237ccab27b154a975e27a90def254, type: 3}
+  - {fileID: 21300000, guid: cdadf1ecea653984b97a86454a7817b3, type: 3}
+  - {fileID: 21300000, guid: d0b9c0adc587d154b8f45dc3d2a62e06, type: 3}
+  - {fileID: 21300000, guid: f718ff4eedcae8b419d878b822ea8b2a, type: 3}
+  - {fileID: 21300000, guid: c69cd05ea3632cb4380df1cc0286ab23, type: 3}
+  - {fileID: 21300000, guid: 4ac5129e6ae260946af64cab78c61221, type: 3}
+  - {fileID: 21300000, guid: 0edb0b3f316b3394cbd444fea3ef09c6, type: 3}
+  - {fileID: 21300000, guid: d19fab3f15994d640bfd89b4e3ae0224, type: 3}
+  - {fileID: 21300000, guid: 126063bfe708e0e4a9e206bcceafaa8d, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - GolemBoss_Mouth
+  - GolemBoss_Rock_Combined
+  - MageBoss_Base
+  - DragonBoss_Black_Hit
+  - GolemBoss_Stone
+  - QueenBoss
+  - MageBoss_Staff_Cursed
+  - DragonBoss_Black_Emote_F2
+  - GolemBoss_Rock_Gem
+  - Dragon
+  - QueenBoss_Cursed
+  - KingBoss_Hit
+  - Golem
+  - DragonBoss_Black_Emote_F1
+  - Cursed Mage
+  - Queen
+  - QueenBoss_Attack
+  - MageBoss_Cursed
+  - DragonBoss_Attack
+  - MageBoss
+  - Cursed Queen
+  - King
+  - DragonBoss_Hit
+  - Cursed Dragon
+  - QueenBoss_Cursed_Attack
+  - GolemBoss_Combined
+  - Random
+  - DragonBoss_Emote_1A
+  - MageBoss_Cursed_Combined
+  - GolemBoss_Hit
+  - GolemBoss_Background
+  - DragonBoss
+  - DragonBoss_Black_Attack
+  - KingBoss
+  - GolemBoss_ClosedMouth
+  - GolemBoss_Head
+  - Mage
+  - DragonBoss_Black
+  - KingBoss_Minion
+  - MageBoss_Staff
+  - GolemBoss_Rock_Base
+  - DragonBoss_Emote_1B
+  m_RenderDataMap: {}
+  m_Tag: BossAtlas
+  m_IsVariant: 0

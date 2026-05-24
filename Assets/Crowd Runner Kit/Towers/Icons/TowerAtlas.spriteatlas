@@ -1,0 +1,248 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: TowerAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 2
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: c22cbc72ac64a4f40b6e09214a480fff, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 51db043011867634da211a90c525b6d6, type: 3}
+  - {fileID: 21300000, guid: 045a9b301d9281d4ab576353aa516541, type: 3}
+  - {fileID: 21300000, guid: 04b42060c21b0f643a1e2f4f5f7ab5a3, type: 3}
+  - {fileID: 21300000, guid: 63ad648090da0cf4186df4ae9eb4749a, type: 3}
+  - {fileID: 21300000, guid: f4cbfcb04cce75b4ea7992fc9567c857, type: 3}
+  - {fileID: 21300000, guid: cd4fc4e0458c440479700b7d4beef332, type: 3}
+  - {fileID: 21300000, guid: 3070b941fc0c74facb3a4a9d23332373, type: 3}
+  - {fileID: 21300000, guid: ba046f412e5e0234c8ecd523624ec813, type: 3}
+  - {fileID: 21300000, guid: faf3f1d101403074b9d1960b177744ae, type: 3}
+  - {fileID: 21300000, guid: c01f53f14f45bab4586774639582e7b8, type: 3}
+  - {fileID: 21300000, guid: 320e45f1eb72ec74eb97707a30b96c73, type: 3}
+  - {fileID: 21300000, guid: 565c12027a226354cad42272d97e051b, type: 3}
+  - {fileID: 21300000, guid: ac6d3612ca678d248aed593e7b52e6ee, type: 3}
+  - {fileID: 21300000, guid: 3fb34c3271f4c0142bad579d68f50635, type: 3}
+  - {fileID: 21300000, guid: f467a15268cce6a4084eeff69367a9da, type: 3}
+  - {fileID: 21300000, guid: 090164b21f1dcac43991c96b810fa963, type: 3}
+  - {fileID: 21300000, guid: fd41abb2a0697a841b9ba7c21a2ecedc, type: 3}
+  - {fileID: 21300000, guid: e959edb28b4002d4696c7f3fb7e1021f, type: 3}
+  - {fileID: 21300000, guid: ab82d5c25ebd1aa42837b1928006b7e8, type: 3}
+  - {fileID: 21300000, guid: b52b7ed2e99ff0d4daed055b273b2541, type: 3}
+  - {fileID: 21300000, guid: 8f5cc16399fa253438f4d51a7b113a5f, type: 3}
+  - {fileID: 21300000, guid: 401264a3b874ec643b94aa1a7ac02bb0, type: 3}
+  - {fileID: 21300000, guid: c5822ea39b7d69b4788dfe6a8ca86807, type: 3}
+  - {fileID: 21300000, guid: 48168ac355cfa70478f8798cfcf2523d, type: 3}
+  - {fileID: 21300000, guid: 4870f724899e3c04ca53fe3acfca827a, type: 3}
+  - {fileID: 21300000, guid: 26542834287ed5d4e852c869349cc3c7, type: 3}
+  - {fileID: 21300000, guid: b110ce742d7814f479fe8bc8dd0840f8, type: 3}
+  - {fileID: 21300000, guid: 07d23b8442c010c4caa4df4e1763d878, type: 3}
+  - {fileID: 21300000, guid: ba6742b4a1aaf024ba21c7ff27d03940, type: 3}
+  - {fileID: 21300000, guid: e5492705a1d25cd45890405793f92f83, type: 3}
+  - {fileID: 21300000, guid: 2b514415cabd47244acdc4c02c52ef58, type: 3}
+  - {fileID: 21300000, guid: 5e2c0b159d288d54ba9871aa2b66ddf6, type: 3}
+  - {fileID: 21300000, guid: 553bd725156a1db4a9590d9a91963df2, type: 3}
+  - {fileID: 21300000, guid: 290ad235a68c7394a8ef0ad91b468aa0, type: 3}
+  - {fileID: 21300000, guid: bbb1567504ad9074ba44d9cbdff3076e, type: 3}
+  - {fileID: 21300000, guid: a25a54a593aa55847a7f709cc418058a, type: 3}
+  - {fileID: 21300000, guid: 783d96b56aa2b5d40888a1b929e567b0, type: 3}
+  - {fileID: 21300000, guid: 339188d56a8030e49b063c31a7acaca8, type: 3}
+  - {fileID: 21300000, guid: 62c825e59a74f3e4aa715301246396f7, type: 3}
+  - {fileID: 21300000, guid: d154cde5334da5a4a8fe902902ab2543, type: 3}
+  - {fileID: 21300000, guid: 3fb966060a5e96b44a9132e576411f47, type: 3}
+  - {fileID: 21300000, guid: b2d7bd36d2533c94d8e441c33012f063, type: 3}
+  - {fileID: 21300000, guid: 3ab765668fa53ad418a0f76bffd5b4be, type: 3}
+  - {fileID: 21300000, guid: 622609766eaa39a47964f1f021856bd9, type: 3}
+  - {fileID: 21300000, guid: 43d10c76455cd8b4bbeb7896d946f87b, type: 3}
+  - {fileID: 21300000, guid: 30719f96478e0ff4bae64aedf5eeac79, type: 3}
+  - {fileID: 21300000, guid: 053458c6bc652014b9832d4d296cfc36, type: 3}
+  - {fileID: 21300000, guid: a33adb37a5e81ff458d2d4769e5c1df6, type: 3}
+  - {fileID: 21300000, guid: 738a9f77980ec614ba6da089f2ec264d, type: 3}
+  - {fileID: 21300000, guid: bdaed087b83ab9844a9582200c794266, type: 3}
+  - {fileID: 21300000, guid: 890897976ed51e2979b2c58164d25f3e, type: 3}
+  - {fileID: 21300000, guid: a48708e7beb5bc446acd40eff624a5a7, type: 3}
+  - {fileID: 21300000, guid: b6c35de7c270a8d47a952ce18859d8a2, type: 3}
+  - {fileID: 21300000, guid: 7f89fa18b2c632f429cf947fcd6d1fa3, type: 3}
+  - {fileID: 21300000, guid: 6de25048d1fe96b48b0fa52db4467d86, type: 3}
+  - {fileID: 21300000, guid: 63d368583674eaa4d9d0c5b9677907ed, type: 3}
+  - {fileID: 21300000, guid: 84dbfb98e3ef4574a98128766bb6a1bb, type: 3}
+  - {fileID: 21300000, guid: 32e704c82cd5e03438d48d4ef773ac25, type: 3}
+  - {fileID: 21300000, guid: 730829c88de8d1a4485db4273c3e54ed, type: 3}
+  - {fileID: 21300000, guid: e1737a09ff4179940a24258271b43aaf, type: 3}
+  - {fileID: 21300000, guid: 7e78282993a6a4491a562d4c7c6a2b19, type: 3}
+  - {fileID: 21300000, guid: 587fd559518d2da9fb9a56cf66d15ad5, type: 3}
+  - {fileID: 21300000, guid: 79bbbb59956e4514fa69348a903f1deb, type: 3}
+  - {fileID: 21300000, guid: 073c37a95c12f394e9db1cb79ca39541, type: 3}
+  - {fileID: 21300000, guid: 0aa98ae9da68aa54790e49cbbb5c23c0, type: 3}
+  - {fileID: 21300000, guid: 7b253b1acca0db64ab7efc74e5b8c097, type: 3}
+  - {fileID: 21300000, guid: 8b5a833ac712fa2429104b130d2783e1, type: 3}
+  - {fileID: 21300000, guid: 2eb2584a789a00949a6523c0459330c0, type: 3}
+  - {fileID: 21300000, guid: b074f8cab856ce94891f23b25e80c8bf, type: 3}
+  - {fileID: 21300000, guid: 551df12bedf08d84d8d18ef5c2693969, type: 3}
+  - {fileID: 21300000, guid: aa82e62bdafdaa0458cf99f207c66593, type: 3}
+  - {fileID: 21300000, guid: 729e0b4b4fe098247b1109da1f7c0cec, type: 3}
+  - {fileID: 21300000, guid: 40e8739b1e9f1064da7ca0c92551ae00, type: 3}
+  - {fileID: 21300000, guid: d2a556abb6416924596d012aa74b1652, type: 3}
+  - {fileID: 21300000, guid: add442eb1bbac254faf166169ec81868, type: 3}
+  - {fileID: 21300000, guid: 5cc6df3c9f439e4439bab902d354415f, type: 3}
+  - {fileID: 21300000, guid: a5af4d6c3380aaf4d9f7a2bca05c0443, type: 3}
+  - {fileID: 21300000, guid: e1e11d9c649e2a64d9af124da325c80b, type: 3}
+  - {fileID: 21300000, guid: 9c4fd2ac6d737574bbaad96dfe3182ef, type: 3}
+  - {fileID: 21300000, guid: a00b27dc0740333448367356faba780f, type: 3}
+  - {fileID: 21300000, guid: 49d90cecfac129943a7cc1bb82c0f5ec, type: 3}
+  - {fileID: 21300000, guid: a7989cfce6738ae4b845f6e7732a41c5, type: 3}
+  - {fileID: 21300000, guid: ffa6320dc6c3fe446b4115b94ecfa6da, type: 3}
+  - {fileID: 21300000, guid: ce13dc2dbd66eaa43b47e5a82431afb9, type: 3}
+  - {fileID: 21300000, guid: 0996cb4d04c2f92448bab781bd983bb6, type: 3}
+  - {fileID: 21300000, guid: 10c2fb4de6929f04c80bda1c0153e394, type: 3}
+  - {fileID: 21300000, guid: 1336a58de194ab94790f2eddd38d3745, type: 3}
+  - {fileID: 21300000, guid: 4f3db8bd17b10d5488dc27a1d17669bf, type: 3}
+  - {fileID: 21300000, guid: c31e20fdeb2658247bf27de7025bc6da, type: 3}
+  - {fileID: 21300000, guid: ab8f603e9f1277f43973864c8f0eabac, type: 3}
+  - {fileID: 21300000, guid: ef9b753e747f3994aae261c132f8ad89, type: 3}
+  - {fileID: 21300000, guid: d9e4777ea9f50ec47bb734c9dcc2b0b6, type: 3}
+  - {fileID: 21300000, guid: 3df5b97eb57622d4d81d417bfa0750c3, type: 3}
+  - {fileID: 21300000, guid: 72bdcc7ee3765dd4ea0257fd5fcd9f9f, type: 3}
+  - {fileID: 21300000, guid: 1e8f468e07225fa4c8b8f6d5200b71a9, type: 3}
+  - {fileID: 21300000, guid: a388dece496b7234c9a5290569522ec3, type: 3}
+  - {fileID: 21300000, guid: fd6518ee193bc1849a6783f291906c6f, type: 3}
+  - {fileID: 21300000, guid: 21ada72fb7d0143489e08f4e97167fb3, type: 3}
+  - {fileID: 21300000, guid: 26f6ac2f73d4a9248a8b38a4d2502a45, type: 3}
+  - {fileID: 21300000, guid: a15a617f5f9d9994d8a9dee476cacaec, type: 3}
+  - {fileID: 21300000, guid: 9f31647f376dc4c4dba6ce17db709a39, type: 3}
+  - {fileID: 21300000, guid: 591aa0bfa64c6be42a7bdcf9b53b31cb, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Tower_2_Icon
+  - Tower_57_Icon
+  - Tower_18_Icon
+  - Tower_14_Icon
+  - Tower_84_Icon
+  - Tower_29_Icon
+  - Tower_67_Icon
+  - Tower_52_Icon
+  - Tower_37_Icon
+  - Tower_95_Icon
+  - Tower_26_Icon
+  - Tower_3_Icon
+  - Tower_71_Icon
+  - Tower_35_Icon
+  - Tower_81_Icon
+  - Tower_9_Icon
+  - Tower_51_Icon
+  - Tower_34_Icon
+  - Tower_30_Icon
+  - Tower_56_Icon
+  - Tower_43_Icon
+  - Tower_40_Icon
+  - Tower_49_Icon
+  - Tower_78_Icon
+  - Tower_56_Icon_MAX
+  - Tower_31_Icon
+  - Tower_17_Icon
+  - Tower_90_Icon
+  - Tower_61_Icon
+  - Tower_82_Icon
+  - Tower_65_Icon
+  - Tower_88_Icon
+  - Tower_70_Icon
+  - Tower_13_Icon
+  - Tower_12_Icon
+  - Tower_44_Icon
+  - Tower_56_Icon_2Star
+  - Tower_74_Icon
+  - Tower_80_Icon
+  - Tower_46_Icon
+  - Tower_0_Icon
+  - Tower_39_Icon
+  - Tower_7_Icon
+  - Tower_22_Icon
+  - Tower_42_Icon
+  - Tower_36_Icon
+  - Tower_56_Icon_4Star
+  - Tower_73_Icon
+  - Tower_6_Icon
+  - Tower_5_Icon
+  - Tower_66_Icon
+  - Tower_59_Icon
+  - Tower_8_Icon
+  - Tower_53_Icon
+  - Tower_92_Icon
+  - Tower_38_Icon
+  - Tower_56_Icon_6Star
+  - Tower_41_Icon
+  - Tower_16_Icon
+  - Tower_93_Icon
+  - Tower_55_Icon
+  - Tower_68_Icon
+  - Tower_45_Icon
+  - Tower_47_Icon
+  - Tower_87_Icon
+  - Tower_77_Icon
+  - Tower_89_Icon
+  - Tower_19_Icon
+  - Tower_72_Icon
+  - Tower_58_Icon
+  - Tower_64_Icon
+  - Tower_33_Icon
+  - Tower_21_Icon
+  - Tower_69_Icon
+  - Tower_94_Icon
+  - Tower_28_Icon
+  - Tower_75_Icon
+  - Tower_76_Icon
+  - Tower_60_Icon
+  - Tower_32_Icon
+  - Tower_27_Icon
+  - Tower_56_Icon_3Star
+  - Tower_85_Icon
+  - Tower_50_Icon
+  - Tower_83_Icon
+  - Tower_48_Icon
+  - Tower_62_Icon
+  - Tower_91_Icon
+  - Tower_11_Icon
+  - Tower_15_Icon
+  - Tower_63_Icon
+  - Tower_24_Icon
+  - Tower_20_Icon
+  - Tower_23_Icon
+  - Tower_79_Icon
+  - Tower_25_Icon
+  - Tower_4_Icon
+  - Tower_54_Icon
+  - Tower_10_Icon
+  - Tower_1_Icon
+  - Tower_56_Icon_5Star
+  - Tower_86_Icon
+  m_RenderDataMap: {}
+  m_Tag: TowerAtlas
+  m_IsVariant: 0

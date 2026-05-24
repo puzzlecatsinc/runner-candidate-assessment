@@ -1,0 +1,654 @@
+fileFormatVersion: 2
+guid: 084994bd4c7875940b0d2f63f6dd2cfd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: Creep_Speed_0
+  - first:
+      213: 21300002
+    second: Creep_Speed_1
+  - first:
+      213: 21300004
+    second: Creep_Speed_2
+  - first:
+      213: 21300006
+    second: Creep_Speed_3
+  - first:
+      213: 21300008
+    second: Creep_Speed_4
+  - first:
+      213: 21300010
+    second: Creep_Speed_5
+  - first:
+      213: 21300012
+    second: Creep_Speed_6
+  - first:
+      213: 21300014
+    second: Creep_Speed_7
+  - first:
+      213: 21300016
+    second: Creep_Speed_8
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: 50
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: 50
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Creep_Speed_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1024
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 250.5, y: -79.99997}
+        - {x: 250.5, y: -12.4999695}
+        - {x: 244.5, y: 28.00003}
+        - {x: 216, y: 76.00003}
+        - {x: 201, y: 98.50003}
+        - {x: 88.5, y: 160.00003}
+        - {x: 40.5, y: 170.50003}
+        - {x: 6, y: 167.50003}
+        - {x: -60, y: 223.00003}
+        - {x: -72, y: 239.50003}
+        - {x: -91.5, y: 248.50003}
+        - {x: -136.5, y: 248.50003}
+        - {x: -150, y: 247.00003}
+        - {x: -228, y: 175.00003}
+        - {x: -246, y: 143.50003}
+        - {x: -246, y: 125.50003}
+        - {x: -178.5, y: 160.00003}
+        - {x: -138, y: 137.50003}
+        - {x: -171, y: 100.00003}
+        - {x: -177, y: 14.5000305}
+        - {x: -204, y: 4.0000305}
+        - {x: -217.5, y: -6.4999695}
+        - {x: -246, y: -34.99997}
+        - {x: -240, y: -78.49997}
+        - {x: -229.5, y: -73.99997}
+        - {x: -217.5, y: -42.49997}
+        - {x: -196.5, y: -60.49997}
+        - {x: -190.5, y: -127.99997}
+        - {x: -168, y: -159.49997}
+        - {x: -117, y: -196.99997}
+        - {x: -81, y: -220.99997}
+        - {x: -18, y: -246.49997}
+        - {x: 81, y: -246.49997}
+        - {x: 118.5, y: -234.49997}
+        - {x: 183, y: -190.99997}
+        - {x: 216, y: -147.49997}
+      physicsShape: []
+      tessellationDetail: 0.11
+      bones: []
+      spriteID: fd074316b13999847b65f93d1773bc76
+      internalID: 21300000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Creep_Speed_1
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1024
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 252.50002, y: -67.99997}
+        - {x: 252.50002, y: -6.4999695}
+        - {x: 245.00002, y: 32.50003}
+        - {x: 228.50002, y: 74.50003}
+        - {x: 209.00002, y: 100.00003}
+        - {x: 159.50002, y: 134.50003}
+        - {x: 44.000015, y: 187.00003}
+        - {x: -44.499985, y: 173.50003}
+        - {x: -57.999985, y: 203.50003}
+        - {x: -71.499985, y: 230.50003}
+        - {x: -96.999985, y: 239.50003}
+        - {x: -129.99998, y: 239.50003}
+        - {x: -144.99998, y: 238.00003}
+        - {x: -203.49998, y: 202.00003}
+        - {x: -249.99998, y: 154.00003}
+        - {x: -252.99998, y: 145.00003}
+        - {x: -252.99998, y: 139.00003}
+        - {x: -251.49998, y: 137.50003}
+        - {x: -234.99998, y: 139.00003}
+        - {x: -171.99998, y: 167.50003}
+        - {x: -144.99998, y: 172.00003}
+        - {x: -143.49998, y: 146.50003}
+        - {x: -170.49998, y: 110.50003}
+        - {x: -179.49998, y: 29.50003}
+        - {x: -221.49998, y: 13.0000305}
+        - {x: -252.99998, y: -31.99997}
+        - {x: -252.99998, y: -37.99997}
+        - {x: -203.49998, y: -31.99997}
+        - {x: -198.99998, y: -91.99997}
+        - {x: -158.49998, y: -159.49997}
+        - {x: -120.999985, y: -202.99997}
+        - {x: -62.499985, y: -234.49997}
+        - {x: 0.50001526, y: -249.49997}
+        - {x: 110.000015, y: -249.49997}
+        - {x: 189.50002, y: -193.99997}
+        - {x: 215.00002, y: -166.99997}
+        - {x: 251.00002, y: -87.49997}
+      physicsShape: []
+      tessellationDetail: 0.11
+      bones: []
+      spriteID: c7d8e8b106f62534abf029b68e2cbb55
+      internalID: 21300002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Creep_Speed_2
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1024
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 248.50003, y: -4.9999695}
+        - {x: 242.50003, y: 29.50003}
+        - {x: 214.00003, y: 79.00003}
+        - {x: 155.50003, y: 124.00003}
+        - {x: 85.00003, y: 152.50003}
+        - {x: 37.00003, y: 166.00003}
+        - {x: -60.49997, y: 161.50003}
+        - {x: -57.49997, y: 182.50003}
+        - {x: -58.99997, y: 199.00003}
+        - {x: -66.49997, y: 218.50003}
+        - {x: -97.99997, y: 232.00003}
+        - {x: -147.49997, y: 232.00003}
+        - {x: -243.49997, y: 191.50003}
+        - {x: -244.99997, y: 187.00003}
+        - {x: -244.99997, y: 170.50003}
+        - {x: -243.49997, y: 169.00003}
+        - {x: -147.49997, y: 143.50003}
+        - {x: -165.49997, y: 121.00003}
+        - {x: -177.49997, y: 91.00003}
+        - {x: -180.49997, y: 29.50003}
+        - {x: -211.99997, y: 26.50003}
+        - {x: -225.49997, y: -1.9999695}
+        - {x: -196.99997, y: -37.99997}
+        - {x: -196.99997, y: -90.49997}
+        - {x: -192.49997, y: -103.99997}
+        - {x: -183.49997, y: -127.99997}
+        - {x: -165.49997, y: -166.99997}
+        - {x: -105.49997, y: -216.49997}
+        - {x: -33.49997, y: -247.99997}
+        - {x: 79.00003, y: -247.99997}
+        - {x: 175.00003, y: -216.49997}
+        - {x: 236.50003, y: -123.49997}
+        - {x: 248.50003, y: -90.49997}
+      physicsShape: []
+      tessellationDetail: 0.11
+      bones: []
+      spriteID: bfac0b3fce13bed4ab6f97aa3aee8060
+      internalID: 21300004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Creep_Speed_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 235.5, y: -120.999985}
+        - {x: 247.5, y: -72.999985}
+        - {x: 247.5, y: -15.999985}
+        - {x: 244.5, y: 35.000015}
+        - {x: 180, y: 108.500015}
+        - {x: 162, y: 126.500015}
+        - {x: 132, y: 146.00002}
+        - {x: 72, y: 164.00002}
+        - {x: -36, y: 192.50002}
+        - {x: -60, y: 212.00002}
+        - {x: -96, y: 230.00002}
+        - {x: -126, y: 230.00002}
+        - {x: -219, y: 210.50002}
+        - {x: -223.5, y: 200.00002}
+        - {x: -201, y: 167.00002}
+        - {x: -153, y: 150.50002}
+        - {x: -186, y: 65.000015}
+        - {x: -186, y: 21.500015}
+        - {x: -247.5, y: -14.499985}
+        - {x: -247.5, y: -23.499985}
+        - {x: -231, y: -33.999985}
+        - {x: -204, y: -38.499985}
+        - {x: -180, y: -119.499985}
+        - {x: -160.5, y: -162.99998}
+        - {x: -124.5, y: -198.99998}
+        - {x: -10.5, y: -240.99998}
+        - {x: 81, y: -240.99998}
+        - {x: 129, y: -227.49998}
+        - {x: 172.5, y: -203.49998}
+        - {x: 207, y: -165.99998}
+      physicsShape: []
+      tessellationDetail: 0.11
+      bones: []
+      spriteID: 2dabbf38354dd464f91a30688ee7fb2a
+      internalID: 21300006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Creep_Speed_4
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 237.50002, y: -122.499985}
+        - {x: 252.50002, y: -66.999985}
+        - {x: 252.50002, y: 0.50001526}
+        - {x: 246.50002, y: 35.000015}
+        - {x: 200.00002, y: 102.500015}
+        - {x: 126.500015, y: 167.00002}
+        - {x: 71.000015, y: 182.00002}
+        - {x: -3.9999847, y: 195.50002}
+        - {x: -104.499985, y: 237.50002}
+        - {x: -137.49998, y: 237.50002}
+        - {x: -227.49998, y: 210.50002}
+        - {x: -222.99998, y: 194.00002}
+        - {x: -195.99998, y: 174.50002}
+        - {x: -168.99998, y: 162.50002}
+        - {x: -125.499985, y: 138.50002}
+        - {x: -141.99998, y: 102.500015}
+        - {x: -171.99998, y: 90.500015}
+        - {x: -174.99998, y: 35.000015}
+        - {x: -186.99998, y: 26.000015}
+        - {x: -246.99998, y: -12.999985}
+        - {x: -248.49998, y: -15.999985}
+        - {x: -248.49998, y: -23.499985}
+        - {x: -243.99998, y: -24.999985}
+        - {x: -228.99998, y: -32.499985}
+        - {x: -182.49998, y: -110.499985}
+        - {x: -162.99998, y: -161.49998}
+        - {x: -126.999985, y: -198.99998}
+        - {x: -39.999985, y: -231.99998}
+        - {x: -0.99998474, y: -245.49998}
+        - {x: 93.500015, y: -245.49998}
+        - {x: 143.00002, y: -221.49998}
+        - {x: 173.00002, y: -200.49998}
+        - {x: 212.00002, y: -159.99998}
+      physicsShape: []
+      tessellationDetail: 0.11
+      bones: []
+      spriteID: dac8c5fd0b845f544b5672b9ab479a95
+      internalID: 21300008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Creep_Speed_5
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 245.50003, y: -77.499985}
+        - {x: 245.50003, y: -33.999985}
+        - {x: 242.50003, y: 8.000015}
+        - {x: 233.50003, y: 38.000015}
+        - {x: 191.50003, y: 102.500015}
+        - {x: 124.00003, y: 146.00002}
+        - {x: 95.50003, y: 158.00002}
+        - {x: 28.00003, y: 171.50002}
+        - {x: -34.99997, y: 189.50002}
+        - {x: -106.99997, y: 237.50002}
+        - {x: -129.49997, y: 240.50002}
+        - {x: -214.99997, y: 240.50002}
+        - {x: -196.99997, y: 191.00002}
+        - {x: -172.99997, y: 173.00002}
+        - {x: -138.49997, y: 125.000015}
+        - {x: -163.99997, y: 101.000015}
+        - {x: -181.99997, y: 78.500015}
+        - {x: -208.99997, y: 20.000015}
+        - {x: -250.99997, y: -0.99998474}
+        - {x: -252.49997, y: -3.9999847}
+        - {x: -252.49997, y: -12.999985}
+        - {x: -241.99997, y: -17.499985}
+        - {x: -201.49997, y: -51.999985}
+        - {x: -204.49997, y: -83.499985}
+        - {x: -204.49997, y: -111.999985}
+        - {x: -159.49997, y: -194.49998}
+        - {x: -28.99997, y: -240.99998}
+        - {x: 4.0000305, y: -245.49998}
+        - {x: 73.00003, y: -245.49998}
+        - {x: 137.50003, y: -225.99998}
+        - {x: 185.50003, y: -194.49998}
+        - {x: 232.00003, y: -131.49998}
+      physicsShape: []
+      tessellationDetail: 0.11
+      bones: []
+      spriteID: 94bf0c77d66e41d4c8998af3a7433e05
+      internalID: 21300010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Creep_Speed_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 250.5, y: -100.5}
+        - {x: 250.5, y: -66}
+        - {x: 247.5, y: -18}
+        - {x: 232.5, y: 49.5}
+        - {x: 232.5, y: 67.5}
+        - {x: 199.5, y: 121.5}
+        - {x: 120, y: 157.5}
+        - {x: 91.5, y: 169.5}
+        - {x: -25.5, y: 190.5}
+        - {x: -54, y: 190.5}
+        - {x: -109.5, y: 175.5}
+        - {x: -142.5, y: 237}
+        - {x: -150, y: 237}
+        - {x: -159, y: 226.5}
+        - {x: -175.5, y: 198}
+        - {x: -186, y: 147}
+        - {x: -163.5, y: 109.5}
+        - {x: -181.5, y: 51}
+        - {x: -187.5, y: 28.5}
+        - {x: -226.5, y: 42}
+        - {x: -229.5, y: 39}
+        - {x: -229.5, y: -21}
+        - {x: -228, y: -33}
+        - {x: -201, y: -79.5}
+        - {x: -159, y: -172.5}
+        - {x: -136.5, y: -196.5}
+        - {x: -72, y: -232.5}
+        - {x: -33, y: -244.5}
+        - {x: 66, y: -244.5}
+        - {x: 133.5, y: -228}
+        - {x: 208.5, y: -180}
+        - {x: 228, y: -145.5}
+      physicsShape: []
+      tessellationDetail: 0.11
+      bones: []
+      spriteID: ca646f1d399183442879d33db924b9ce
+      internalID: 21300012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Creep_Speed_7
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 252.50002, y: -90}
+        - {x: 252.50002, y: -1.5}
+        - {x: 246.50002, y: 24}
+        - {x: 231.50002, y: 72}
+        - {x: 201.50002, y: 109.5}
+        - {x: 161.00002, y: 133.5}
+        - {x: 93.500015, y: 162}
+        - {x: 17.000015, y: 178.5}
+        - {x: -50.499985, y: 192}
+        - {x: -102.999985, y: 175.5}
+        - {x: -147.99998, y: 232.5}
+        - {x: -155.49998, y: 232.5}
+        - {x: -161.49998, y: 231}
+        - {x: -177.99998, y: 186}
+        - {x: -177.99998, y: 147}
+        - {x: -165.99998, y: 126}
+        - {x: -147.99998, y: 90}
+        - {x: -174.99998, y: 72}
+        - {x: -177.99998, y: 22.5}
+        - {x: -209.49998, y: 46.5}
+        - {x: -212.49998, y: 37.5}
+        - {x: -212.49998, y: 13.5}
+        - {x: -210.99998, y: 7.5}
+        - {x: -206.49998, y: -24}
+        - {x: -171.99998, y: -100.5}
+        - {x: -167.49998, y: -130.5}
+        - {x: -144.99998, y: -189}
+        - {x: -75.999985, y: -234}
+        - {x: -23.499985, y: -250.5}
+        - {x: 54.500015, y: -250.5}
+        - {x: 98.000015, y: -246}
+        - {x: 179.00002, y: -207}
+        - {x: 227.00002, y: -159}
+        - {x: 249.50002, y: -124.5}
+      physicsShape: []
+      tessellationDetail: 0.11
+      bones: []
+      spriteID: 884e884a8a0ddc64fa3873647fef4f73
+      internalID: 21300014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Creep_Speed_8
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 250.00003, y: -105}
+        - {x: 250.00003, y: -15}
+        - {x: 232.00003, y: 70.5}
+        - {x: 202.00003, y: 111}
+        - {x: 73.00003, y: 174}
+        - {x: -27.49997, y: 201}
+        - {x: -93.49997, y: 186}
+        - {x: -136.99997, y: 244.5}
+        - {x: -144.49997, y: 244.5}
+        - {x: -147.49997, y: 243}
+        - {x: -156.49997, y: 223.5}
+        - {x: -169.99997, y: 189}
+        - {x: -174.49997, y: 174}
+        - {x: -171.49997, y: 141}
+        - {x: -147.49997, y: 102}
+        - {x: -168.49997, y: 78}
+        - {x: -199.99997, y: 28.5}
+        - {x: -222.49997, y: 51}
+        - {x: -223.99997, y: 46.5}
+        - {x: -223.99997, y: -22.5}
+        - {x: -172.99997, y: -129}
+        - {x: -151.99997, y: -171}
+        - {x: -121.99997, y: -210}
+        - {x: -33.49997, y: -252}
+        - {x: 82.00003, y: -252}
+        - {x: 107.50003, y: -247.5}
+        - {x: 184.00003, y: -210}
+        - {x: 235.00003, y: -153}
+      physicsShape: []
+      tessellationDetail: 0.11
+      bones: []
+      spriteID: 7ca89fc1db0654d47a008453c4122044
+      internalID: 21300016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: c07fe2c1b6396bb4c81d68acf995043c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Creep_Speed_1: 21300002
+      Creep_Speed_8: 21300016
+      Creep_Speed_2: 21300004
+      Creep_Speed_5: 21300010
+      Creep_Speed_3: 21300006
+      Creep_Speed_7: 21300014
+      Creep_Speed_4: 21300008
+      Creep_Speed_0: 21300000
+      Creep_Speed_6: 21300012
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

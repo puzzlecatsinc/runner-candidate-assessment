@@ -1,0 +1,128 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: CreepAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: fba141a7922d69344af51705103524c2, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 3d60f9a0765c9cd448eaf0c1b34f76dd, type: 3}
+  - {fileID: 21300000, guid: 43d5afe0a180b824abaf4f0e53cb0c39, type: 3}
+  - {fileID: 21300000, guid: a098e901d14ee344e9cc1bd0e30f2c66, type: 3}
+  - {fileID: 21300000, guid: ee05cd012fbfee24c86dd8bcdf17b04e, type: 3}
+  - {fileID: 21300000, guid: fcc4cb816d175ae4185c8f9b6565ecfe, type: 3}
+  - {fileID: 21300000, guid: 3070e7e1a4db14c459df526dee412887, type: 3}
+  - {fileID: 21300000, guid: 63eea5e274c9a9941ab8f00a557aba37, type: 3}
+  - {fileID: 21300000, guid: 966c01232a1b0b745914d3195400102d, type: 3}
+  - {fileID: 21300000, guid: 799878d3ca85c0a4b9d27c9719deb3f4, type: 3}
+  - {fileID: 21300000, guid: 088bdc544ecb32642ba44842c0b4da70, type: 3}
+  - {fileID: 21300000, guid: 8801d965c7cb52a4aaf8301d65487bfd, type: 3}
+  - {fileID: 21300000, guid: 54d6b6d53b5997047ac8ce17dd32f150, type: 3}
+  - {fileID: 21300000, guid: cf9648364e601cd4fb8ded7267b0fa24, type: 3}
+  - {fileID: 21300000, guid: 2de99c468bd2bb644878b6ed96745802, type: 3}
+  - {fileID: 21300000, guid: b58b5b967cd6e534e8b3e8f92abe05a8, type: 3}
+  - {fileID: 21300000, guid: a07c11a6e68d74041bac86f20f84b45e, type: 3}
+  - {fileID: 21300000, guid: 6e3b79e66a3305a4d86e6b808383886f, type: 3}
+  - {fileID: 21300000, guid: 7a1ee4e761622d74e9472c6b43ae0f21, type: 3}
+  - {fileID: 21300000, guid: 0d770db890519b744b2ee5d1ff411cef, type: 3}
+  - {fileID: 21300000, guid: 82228939d072b1c458f674798e17a021, type: 3}
+  - {fileID: 21300000, guid: e2b42749851fc504ab170a73015158b1, type: 3}
+  - {fileID: 21300000, guid: 67c304c90e820024bbd66ecd972d7535, type: 3}
+  - {fileID: 21300000, guid: 410efbe97f014b747845680bc04985ca, type: 3}
+  - {fileID: 21300000, guid: 4b0cb33a6c8fc0c448f9162bb4dd1eef, type: 3}
+  - {fileID: 21300000, guid: 505d503bb4f89504a904265c89f767e4, type: 3}
+  - {fileID: 21300000, guid: f2ebe04b6c0cb864488b9e2d8c5f5ec7, type: 3}
+  - {fileID: 21300000, guid: ba77245be15536b419999546607ad67f, type: 3}
+  - {fileID: 21300000, guid: 35b2e55b02d61bd408a5cfc3b52e8f60, type: 3}
+  - {fileID: 21300000, guid: 266dcbeb3c67ca841ab0fcd8f4e34505, type: 3}
+  - {fileID: 21300000, guid: 1d8fa41d14a1775498b455dcac2505fb, type: 3}
+  - {fileID: 21300000, guid: eb9dbd4da1cbd3c49ba7a996db9754be, type: 3}
+  - {fileID: 21300016, guid: 084994bd4c7875940b0d2f63f6dd2cfd, type: 3}
+  - {fileID: 21300014, guid: 084994bd4c7875940b0d2f63f6dd2cfd, type: 3}
+  - {fileID: 21300012, guid: 084994bd4c7875940b0d2f63f6dd2cfd, type: 3}
+  - {fileID: 21300010, guid: 084994bd4c7875940b0d2f63f6dd2cfd, type: 3}
+  - {fileID: 21300008, guid: 084994bd4c7875940b0d2f63f6dd2cfd, type: 3}
+  - {fileID: 21300006, guid: 084994bd4c7875940b0d2f63f6dd2cfd, type: 3}
+  - {fileID: 21300004, guid: 084994bd4c7875940b0d2f63f6dd2cfd, type: 3}
+  - {fileID: 21300002, guid: 084994bd4c7875940b0d2f63f6dd2cfd, type: 3}
+  - {fileID: 21300000, guid: 084994bd4c7875940b0d2f63f6dd2cfd, type: 3}
+  - {fileID: 21300000, guid: 50b71b1f61d584948a75f093ec5a95eb, type: 3}
+  - {fileID: 21300000, guid: 332f539f216c1d14c89b967d782fd21c, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Creep_E
+  - Creep_Zombie_Boss_Electrocute_F1
+  - Creep_D_Boss
+  - electro_f2
+  - Creep_B
+  - Creep_Zombie_Boss_Electrocute_F2
+  - Creep_Zombie_Speed_Electrocute_F1
+  - Creep_F
+  - Creep_E_Boss
+  - Creep_E_Speed
+  - Summoner_Creep_PvP
+  - electro_bg
+  - Creep_B_Boss
+  - Creep_Zombie_Speed
+  - Creep_Zombie_Electrocute_F2
+  - Creep_B_Speed
+  - electro_f1
+  - Creep_Zombie_Speed_Electrocute_F2
+  - Creep_A
+  - Creep_Electrocute_Generic_F1
+  - Creep_Zombie_Boss
+  - Creep_C_Speed
+  - Summoner_Creep_Coop
+  - Creep_A_Boss
+  - Creep_Electrocute_Generic_F2
+  - Creep_Zombie_Electrocute_F1
+  - Creep_D
+  - Creep_D_Speed
+  - Creep_C
+  - Creep_C_Boss
+  - Creep_F_Speed
+  - Creep_Speed_8
+  - Creep_Speed_7
+  - Creep_Speed_6
+  - Creep_Speed_5
+  - Creep_Speed_4
+  - Creep_Speed_3
+  - Creep_Speed_2
+  - Creep_Speed_1
+  - Creep_Speed_0
+  - Creep_Zombie
+  - Creep_F_Boss
+  m_RenderDataMap: {}
+  m_Tag: CreepAtlas
+  m_IsVariant: 0
