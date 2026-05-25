@@ -1,4 +1,4 @@
-# Candidate Task: Make Runner Crowd Math Testable and Safer
+# Candidate Task: Make Runner Crowd Math Testable, Faster, and Safer on Device
 
 ## Context
 
@@ -8,11 +8,11 @@ This is a small hyper-casual runner prototype. The core player loop is driven by
 - `PlayerController.cs` mutates the live runner list, updates UI/audio/FOV side effects, and handles death.
 - The current implementation mixes deterministic crowd-count rules with Unity scene side effects, making edge cases hard to test and easy to regress.
 
-Your task is to improve this area without rewriting the game.
+Your task is to improve this area without rewriting the game, while also proving the result on a physical device and looking for production issues that editor-only testing can miss.
 
 ## Task
 
-Refactor the crowd-count/gate behavior so the rules are deterministic, testable, and safer at edge cases, then wire the existing runtime behavior through that rule layer.
+Refactor the crowd-count/gate behavior so the rules are deterministic, testable, faster on real devices, and safer at edge cases, then wire the existing runtime behavior through that rule layer.
 
 A good solution usually introduces a small pure C# rule/calculator class such as `CrowdCountCalculator`, but the exact shape is up to you. The important part is that the count math can be tested without instantiating the full scene.
 
@@ -46,7 +46,44 @@ Today `PlayerController.DivideCharacters` kills the player whenever the crowd co
 
 Recommended behavior: a non-lethal divide gate should not kill a one-runner crowd; lethal outcomes should come from subtractive gates or runner/blocker collisions. If you choose a different behavior, justify it in `APPROACH.md` and cover it with tests.
 
-### 4. Show your agent operating model
+### 4. Optimize a real runtime path
+
+Do not optimize by guessing or rewriting the whole project. Inspect the existing runner/gate path and make at least one focused performance-minded improvement that fits the task. Examples of acceptable directions:
+
+- Reduce avoidable allocations or repeated work in crowd/gate transitions.
+- Keep deterministic count math out of MonoBehaviour side effects so it can be tested cheaply.
+- Avoid duplicate logic that makes future runtime behavior harder to reason about.
+- Preserve visual/gameplay behavior while making the underlying path simpler and cheaper.
+
+In `APPROACH.md`, explain what you considered a performance risk, what you changed, and why the change is safe.
+
+### 5. Build and run on a physical device
+
+You must produce a development build and run the game on a physical mobile device. Simulator-only and editor-only validation do not satisfy this requirement.
+
+Document:
+
+- Platform and device model/OS version.
+- Unity build target and build type.
+- Whether the build installed and launched successfully.
+- The exact gameplay path tested, including gates/crowd changes touched by your code.
+- Any logs captured from Android `logcat`, Xcode device console, or Unity player logs.
+- Performance observations such as FPS/jank, GC spikes, memory pressure, loading stalls, overheating, input lag, or visual/runtime glitches.
+
+A submission without physical-device evidence is incomplete unless you contacted us before starting and got explicit approval for an alternate validation plan.
+
+### 6. Spot production issues on device
+
+While testing on device, look beyond the code path you changed. Note production risks you see, even if you do not fix all of them within the timebox. Good examples:
+
+- Device-only exceptions, warnings, missing assets, shader/material issues, or logging noise.
+- Bad first-run behavior, slow startup, touch/input problems, orientation/aspect-ratio issues, safe-area problems, or UI cutoffs.
+- Frame hitches, obvious GC spikes, memory growth, battery/thermal issues, or heavy per-frame work.
+- Build setting issues that would matter for release readiness.
+
+Fix issues that are tightly connected to your code change. For broader issues, document the evidence, likely cause, and recommended next step.
+
+### 7. Show your agent operating model
 
 If you use AI assistants or coding agents, include the workflow artifacts that helped you run them responsibly. At minimum, your notes should make clear:
 
@@ -58,7 +95,7 @@ If you use AI assistants or coding agents, include the workflow artifacts that h
 
 See `docs/AGENT_WORKFLOW.md` for examples. Equivalent formats are fine.
 
-### 5. Keep scope tight
+### 8. Keep scope tight
 
 Do not turn this into a broad Unity cleanup.
 
@@ -77,8 +114,10 @@ A reviewer should be able to verify that:
 - The project opens in Unity 2021.3.38f1.
 - `scripts/smoke_check.sh` passes.
 - `scripts/run_visible_tests.sh` runs EditMode tests, or you document exactly why it cannot run in your environment.
+- A development build was installed and run on a physical device, with evidence in `APPROACH.md`.
 - The crowd-count rules are covered by focused tests.
 - Runtime code uses the tested rule path.
+- The submission includes performance reasoning and a device production-issue pass.
 - `APPROACH.md` is completed with decisions, tradeoffs, and validation evidence.
 - AI/tool usage is disclosed clearly.
 - Agent workflow artifacts are included if agents were used, or the absence of agents is stated plainly.
@@ -89,6 +128,8 @@ We will look for engineering judgment, not just final behavior:
 
 - Did you read the existing code before changing it?
 - Did you isolate deterministic logic from Unity side effects cleanly?
+- Did you optimize a real runtime path rather than doing speculative cleanup?
+- Did you build and run on device and catch production issues that editor-only testing would miss?
 - Did you avoid broad churn in assets and third-party code?
 - Did your tests catch the important edge cases?
 - Can you explain what changed without leaning on AI output?
@@ -105,4 +146,5 @@ We will look for engineering judgment, not just final behavior:
 6. Wire `PlayerController` through that rule layer.
 7. Review the diff critically, including any AI-generated code.
 8. Run the smoke check and Unity EditMode tests.
-9. Fill out `APPROACH.md` and include agent workflow artifacts if relevant.
+9. Build, install, and play the relevant path on a physical device.
+10. Fill out `APPROACH.md` and include agent workflow artifacts if relevant.

@@ -40,6 +40,21 @@ if ! grep -q "Agent workflow requirement" README.md; then
   exit 1
 fi
 
+if ! grep -q "Physical-device run required" README.md; then
+  echo "README.md does not appear to include the physical-device run requirement." >&2
+  exit 1
+fi
+
+if ! grep -q "Build and run on a physical device" ISSUE.md; then
+  echo "ISSUE.md does not appear to include the on-device build/run requirement." >&2
+  exit 1
+fi
+
+if ! grep -q "Performance and on-device production readiness" docs/CANDIDATE_RUBRIC.md; then
+  echo "docs/CANDIDATE_RUBRIC.md does not appear to include the performance/on-device rubric." >&2
+  exit 1
+fi
+
 if ! grep -q "Agent Workflow Expectations" docs/AGENT_WORKFLOW.md; then
   echo "docs/AGENT_WORKFLOW.md does not appear to include the expected agent workflow guidance." >&2
   exit 1

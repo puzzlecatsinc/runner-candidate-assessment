@@ -27,6 +27,9 @@ Fill this out before submission. Keep it short, factual, and evidence-backed. If
 - [ ] Divide gates floor results and do **not** kill a one-runner crowd for non-lethal divides.
 - [ ] Invalid/boundary inputs are handled deliberately.
 - [ ] Runtime methods still preserve UI/audio/FOV/death side effects.
+- [ ] A real runner/gate runtime path was optimized or simplified for performance.
+- [ ] A physical-device build/run was completed and documented.
+- [ ] Device-only production issues were fixed or triaged with evidence.
 
 ## Code touched
 
@@ -46,6 +49,10 @@ Fill this out before submission. Keep it short, factual, and evidence-backed. If
 - One-runner divide decision:
   - TODO
 - Invalid input behavior:
+  - TODO
+- Performance risk addressed:
+  - TODO
+- Why the performance change is safe:
   - TODO
 
 ## Tests and validation
@@ -75,6 +82,33 @@ Focused test coverage:
 - [ ] Divide floors result.
 - [ ] Divide of one runner remains one for non-lethal divide.
 - [ ] Invalid divisor/multiplier/boundary values handled deliberately.
+
+## On-device production/performance pass
+
+Physical-device validation is required. Simulator-only/editor-only validation is incomplete unless approved before starting.
+
+- Platform:
+  - TODO: Android or iOS
+- Device model and OS version:
+  - TODO
+- Unity build target/build type/settings used:
+  - TODO
+- Build/install evidence:
+  - TODO: build log path, command output, Xcode/Android Studio result, or screenshot
+- On-device run evidence:
+  - TODO: screenshot, short recording, or exact manual test notes
+- Gameplay path tested:
+  - TODO: include the gates/crowd behavior touched by this change
+- Runtime logs captured:
+  - TODO: Android logcat, Xcode device console, Unity player log, or why unavailable
+- Performance observations:
+  - TODO: FPS/jank, GC spikes, memory pressure, loading stalls, touch/input responsiveness, thermal/battery symptoms
+- Production issues found:
+  - TODO
+- Issues fixed in this submission:
+  - TODO
+- Issues triaged for follow-up:
+  - TODO
 
 Manual Unity checks, if any:
 

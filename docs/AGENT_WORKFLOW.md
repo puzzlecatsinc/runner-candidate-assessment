@@ -26,6 +26,7 @@ Good contents:
 - Project overview.
 - Relevant directories and files.
 - Build/test commands.
+- Physical-device build/run requirements.
 - Coding conventions.
 - Scope boundaries and areas not to touch.
 - Validation checklist.
@@ -47,6 +48,7 @@ Before implementation, capture:
 - Root-cause hypothesis.
 - Intended change.
 - Test strategy.
+- Device/performance validation strategy.
 - Risks.
 - What is explicitly out of scope.
 
@@ -79,6 +81,8 @@ Include exact evidence:
 - Commands run.
 - Test results.
 - Unity editor version or environment blocker.
+- Physical device model/OS, build/install evidence, and gameplay path tested.
+- Device logs, profiler notes, screenshots/recordings, or other direct production evidence.
 - Manual gameplay checks.
 - Screenshots/log paths if relevant.
 
@@ -100,6 +104,7 @@ Prevent telephone-game degradation by giving each agent the original source cont
 - Repo-specific instructions and validation gates.
 - Clear examples of AI being wrong and the candidate catching it.
 - Small code changes with strong tests and evidence.
+- On-device validation that catches performance or production issues editor tests miss.
 - Markdown artifacts that a future engineer or agent could reuse.
 
 ## Reject signal
@@ -107,6 +112,7 @@ Prevent telephone-game degradation by giving each agent the original source cont
 - “I used Cursor/Claude/Codex” with no details.
 - Prompt-spamming until code compiled.
 - No plan, no review notes, no validation record.
+- No physical-device build/run evidence.
 - Cannot explain the final patch without AI.
 - Broad generated rewrites or duplicate/fallback paths.
 - Generated Unity/IDE/cache files checked into the submission.
