@@ -7,15 +7,44 @@ This repository is a Unity runner-game codebase used for a focused engineering a
 Start here:
 
 1. Read `ISSUE.md` for the task and acceptance criteria.
-2. Inspect the existing Unity scripts before changing code.
-3. Identify the likely performance and production-risk touchpoints before implementation.
-4. Make a focused implementation in the existing runner game code.
-5. Add tests that prove the behavior you changed.
-6. Build and run the game on a physical mobile device.
-7. Complete `APPROACH.md` with decisions, validation evidence, AI/tool usage, and agent workflow artifacts.
-8. If you use coding agents, include the workflow artifacts described in `docs/AGENT_WORKFLOW.md`.
+2. Set up your own private submission repository using the instructions below.
+3. Inspect the existing Unity scripts before changing code.
+4. Identify the likely performance and production-risk touchpoints before implementation.
+5. Make a focused implementation in the existing runner game code.
+6. Add tests that prove the behavior you changed.
+7. Build and run the game on a physical mobile device.
+8. Complete `APPROACH.md` with decisions, validation evidence, AI/tool usage, and agent workflow artifacts.
+9. If you use coding agents, include the workflow artifacts described in `docs/AGENT_WORKFLOW.md`.
 
 Recommended timebox: **2-3 hours**. If you hit the timebox, stop cleanly and document what is done vs. what remains.
+
+## Submission repository setup
+
+Repository setup is part of the assessment. Follow these instructions exactly so every candidate submission is private, reviewable, and isolated from other candidates.
+
+You should **not** work in a shared candidate branch. You should submit from your own private GitHub repository.
+
+Required setup:
+
+1. Create a new **private** repository under your own GitHub account.
+2. Name it clearly, for example `runner-assessment-your-name`.
+3. Copy this starter repository into your private repository. Either:
+   - use GitHub's **Use this template** flow if it is available, or
+   - clone this starter repo, create your private repo, change `origin`, and push the starter code there.
+4. Invite the reviewer GitHub usernames provided in the assessment email with at least **Write** access.
+5. Create a branch named `candidate/<your-name>`.
+6. Complete the assessment on that branch.
+7. Open a pull request from `candidate/<your-name>` into `main` in your private repository.
+8. Send us both the private repository URL and the pull request URL.
+
+Rules:
+
+- Your submission repository must remain **private**. A public repository submission is incomplete.
+- Do not invite or share your repository with other candidates.
+- Do not submit by pushing to a shared assessment repo.
+- Do not send a zip file unless we explicitly request it because GitHub access is blocked.
+- If setup fails, document the exact blocker and contact us before doing the implementation work.
+
 
 ## What we are evaluating
 
@@ -61,7 +90,7 @@ You do not need to use these exact filenames if your workflow has an equivalent 
 
 ## Project setup
 
-- Unity version: **2021.3.38f1**
+- Unity version: **6000.3.3f1**
 - Open the Unity project at this repository root.
 - Main game scene: `Assets/Crowd Runner Kit/Scenes/Game Scene.unity`
 - Main gameplay scripts:
@@ -112,15 +141,22 @@ Then perform the required physical-device build/run and document the evidence in
 
 ## Submission requirements
 
-Submit a branch or PR containing:
+Submit a pull request in your own private repository containing:
 
 - Your focused code changes.
 - EditMode tests for the behavior you changed.
-- Completed `APPROACH.md`.
+- Completed `APPROACH.md`, including your private repo/PR setup checklist.
 - On-device build/run evidence and a short production/performance issue report.
 - Agent workflow artifacts if you used agents, or a short note if you used AI only interactively.
 - Validation evidence: command output, logs, screenshots, recordings, or exact environment blockers.
 - No generated Unity cache/build files (`Library/`, `Temp/`, `Logs/`, `UserSettings/`, `.csproj`, `.sln`, etc.).
+
+After opening the pull request, send us:
+
+1. Private repository URL.
+2. Pull request URL.
+3. Device used for physical validation.
+4. Any setup or validation blockers.
 
 ## Evaluation
 

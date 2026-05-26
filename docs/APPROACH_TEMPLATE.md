@@ -2,6 +2,21 @@
 
 Fill this out before submission. Keep it short, factual, and evidence-backed. If you used AI or coding agents, be specific enough that a reviewer can understand your workflow and verify that you owned the final result.
 
+## Submission setup
+
+- Private repository URL:
+  - TODO
+- Pull request URL:
+  - TODO
+- Branch name:
+  - TODO: `candidate/<your-name>`
+- Reviewer GitHub usernames invited:
+  - TODO
+- Repository visibility:
+  - TODO: Private
+- I did not make this repository public or share it with other candidates:
+  - TODO: Yes/No
+
 ## Summary
 
 - Changed:
@@ -70,7 +85,7 @@ scripts/run_visible_tests.sh
 If `scripts/run_visible_tests.sh` cannot run locally, include the exact blocker and evidence:
 
 ```text
-TODO: e.g. Unity 2021.3.38f1 not installed at expected path; installed editors: ...
+TODO: e.g. Unity 6000.3.3f1 not installed at expected path; installed editors: ...
 ```
 
 Focused test coverage:

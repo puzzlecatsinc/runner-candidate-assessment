@@ -10,6 +10,8 @@ This is a small hyper-casual runner prototype. The core player loop is driven by
 
 Your task is to improve this area without rewriting the game, while also proving the result on a physical device and looking for production issues that editor-only testing can miss.
 
+Your submission must be made from your own private GitHub repository and pull request, following the setup instructions in `README.md`. Repository setup is part of the assessment.
+
 ## Task
 
 Refactor the crowd-count/gate behavior so the rules are deterministic, testable, faster on real devices, and safer at edge cases, then wire the existing runtime behavior through that rule layer.
@@ -111,7 +113,10 @@ Avoid:
 
 A reviewer should be able to verify that:
 
-- The project opens in Unity 2021.3.38f1.
+- The candidate created a private GitHub submission repository from this starter repo.
+- The reviewer GitHub accounts were invited with sufficient access.
+- The work is submitted as a pull request from `candidate/<name>` into `main` in that private repo.
+- The project opens in Unity 6000.3.3f1.
 - `scripts/smoke_check.sh` passes.
 - `scripts/run_visible_tests.sh` runs EditMode tests, or you document exactly why it cannot run in your environment.
 - A development build was installed and run on a physical device, with evidence in `APPROACH.md`.
@@ -138,13 +143,17 @@ We will look for engineering judgment, not just final behavior:
 
 ## Suggested workflow
 
-1. Inspect `PlayerController.cs` and `Gate.cs`.
-2. Write a short investigation/plan note before editing code.
-3. If using agents, create or update agent-facing instructions/task briefs.
-4. Write or sketch tests for the crowd-count rules.
-5. Extract the smallest useful rule layer.
-6. Wire `PlayerController` through that rule layer.
-7. Review the diff critically, including any AI-generated code.
-8. Run the smoke check and Unity EditMode tests.
-9. Build, install, and play the relevant path on a physical device.
-10. Fill out `APPROACH.md` and include agent workflow artifacts if relevant.
+1. Create your private GitHub submission repository from this starter repo.
+2. Invite the requested reviewer GitHub usernames.
+3. Create branch `candidate/<your-name>`.
+4. Inspect `PlayerController.cs` and `Gate.cs`.
+5. Write a short investigation/plan note before editing code.
+6. If using agents, create or update agent-facing instructions/task briefs.
+7. Write or sketch tests for the crowd-count rules.
+8. Extract the smallest useful rule layer.
+9. Wire `PlayerController` through that rule layer.
+10. Review the diff critically, including any AI-generated code.
+11. Run the smoke check and Unity EditMode tests.
+12. Build, install, and play the relevant path on a physical device.
+13. Fill out `APPROACH.md` and include agent workflow artifacts if relevant.
+14. Open a pull request from `candidate/<your-name>` into `main` in your private repo.

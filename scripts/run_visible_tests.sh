@@ -13,9 +13,15 @@ if [[ ! -f "$PROJECT_VERSION_FILE" ]]; then
   exit 1
 fi
 
+UNITY_VERSION="$(grep '^m_EditorVersion:' "$PROJECT_VERSION_FILE" | head -1 | cut -d: -f2- | tr -d '[:space:]')"
+if [[ -z "$UNITY_VERSION" ]]; then
+  echo "Could not parse Unity version from ProjectSettings/ProjectVersion.txt." >&2
+  exit 1
+fi
+
 UNITY_EDITOR="${UNITY_EDITOR:-}"
 if [[ -z "$UNITY_EDITOR" ]]; then
-  for candidate in     "/Applications/Unity/Hub/Editor/2021.3.38f1/Unity.app/Contents/MacOS/Unity"     "/Applications/Unity/Unity.app/Contents/MacOS/Unity"
+  for candidate in     "/Applications/Unity/Hub/Editor/${UNITY_VERSION}/Unity.app/Contents/MacOS/Unity"     "/Applications/Unity/Unity.app/Contents/MacOS/Unity"
   do
     if [[ -x "$candidate" ]]; then
       UNITY_EDITOR="$candidate"
@@ -25,10 +31,10 @@ if [[ -z "$UNITY_EDITOR" ]]; then
 fi
 
 if [[ -z "$UNITY_EDITOR" || ! -x "$UNITY_EDITOR" ]]; then
-  cat >&2 <<'MSG'
+  cat >&2 <<MSG
 Unity editor not found.
 
-Install Unity 2021.3.38f1 or run with:
+Install Unity ${UNITY_VERSION} or run with:
 
   UNITY_EDITOR="/path/to/Unity.app/Contents/MacOS/Unity" scripts/run_visible_tests.sh
 MSG
@@ -38,7 +44,13 @@ fi
 mkdir -p "$RESULTS_DIR" "$LOG_DIR"
 
 echo "Running Unity EditMode tests with: $UNITY_EDITOR"
-"$UNITY_EDITOR"   -batchmode   -nographics   -quit   -projectPath "$ROOT_DIR"   -runTests   -testPlatform EditMode   -testResults "$RESULTS_FILE"   -logFile "$LOG_FILE"
+"$UNITY_EDITOR"   -batchmode   -nographics   -projectPath "$ROOT_DIR"   -runTests   -testPlatform EditMode   -testResults "$RESULTS_FILE"   -logFile "$LOG_FILE"
+
+if [[ ! -s "$RESULTS_FILE" ]]; then
+  echo "Unity exited without writing EditMode test results: $RESULTS_FILE" >&2
+  echo "Unity log: $LOG_FILE" >&2
+  exit 1
+fi
 
 echo "Unity EditMode test results: $RESULTS_FILE"
 echo "Unity log: $LOG_FILE"

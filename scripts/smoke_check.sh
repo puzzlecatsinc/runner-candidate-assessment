@@ -25,8 +25,8 @@ for path in "${required_files[@]}"; do
   fi
 done
 
-if ! grep -q "2021.3.38f1" ProjectSettings/ProjectVersion.txt; then
-  echo "Unexpected Unity version. Expected 2021.3.38f1 in ProjectSettings/ProjectVersion.txt" >&2
+if ! grep -q "6000.3.3f1" ProjectSettings/ProjectVersion.txt; then
+  echo "Unexpected Unity version. Expected 6000.3.3f1 in ProjectSettings/ProjectVersion.txt" >&2
   exit 1
 fi
 
@@ -37,6 +37,26 @@ fi
 
 if ! grep -q "Agent workflow requirement" README.md; then
   echo "README.md does not appear to include the agent workflow requirement." >&2
+  exit 1
+fi
+
+if ! grep -q "Submission repository setup" README.md; then
+  echo "README.md does not appear to include the private submission repository setup requirement." >&2
+  exit 1
+fi
+
+if ! grep -q "private GitHub submission repository" ISSUE.md; then
+  echo "ISSUE.md does not appear to include the private submission repository requirement." >&2
+  exit 1
+fi
+
+if ! grep -q "Private repository URL" APPROACH.md; then
+  echo "APPROACH.md does not appear to include the submission setup checklist." >&2
+  exit 1
+fi
+
+if ! grep -q "submission hygiene" docs/CANDIDATE_RUBRIC.md; then
+  echo "docs/CANDIDATE_RUBRIC.md does not appear to include submission setup/hygiene scoring." >&2
   exit 1
 fi
 

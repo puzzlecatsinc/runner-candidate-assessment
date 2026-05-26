@@ -31,7 +31,7 @@ Good contents:
 - Scope boundaries and areas not to touch.
 - Validation checklist.
 - Known Unity pitfalls.
-- Git hygiene and generated-file warnings.
+- Git hygiene, private submission repository setup, and generated-file warnings.
 
 Weak contents:
 
@@ -116,3 +116,4 @@ Prevent telephone-game degradation by giving each agent the original source cont
 - Cannot explain the final patch without AI.
 - Broad generated rewrites or duplicate/fallback paths.
 - Generated Unity/IDE/cache files checked into the submission.
+- Public submission repo, missing reviewer access, or no reviewable pull request.

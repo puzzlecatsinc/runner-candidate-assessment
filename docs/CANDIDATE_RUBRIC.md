@@ -43,9 +43,10 @@ Total: 100 points.
 - 2: Reviews generated output critically and avoids unnecessary churn or fallback paths.
 - 2: Explains how the workflow could be reused by a future engineer or agent.
 
-## Engineering judgment and communication: 5 points
+## Engineering judgment, communication, and submission hygiene: 5 points
 
-- 2: `APPROACH.md` explains what changed and why.
+- 1: Private repository and pull request setup follows the README instructions.
+- 1: `APPROACH.md` explains what changed and why.
 - 1: Tradeoffs and limitations are honest and grounded in the code.
 - 1: Candidate can explain the final solution without tool assistance.
 - 1: Scope control is strong: fixes the task, not the whole repo.
@@ -64,6 +65,7 @@ Total: 100 points.
 
 ## Reject signals
 
+- Submission repository is public, missing reviewer access, missing a PR, or not based on the provided starter repo.
 - Broad rewrite with weak tests.
 - Parallel/fallback logic where old and new behavior diverge.
 - Cannot explain their own solution.
