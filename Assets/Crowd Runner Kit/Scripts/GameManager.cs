@@ -113,19 +113,19 @@ public class GameManager : MonoBehaviour
             obstacleIndex = UnityEngine.Random.Range(0, Obstacles.Length);
         }
         GameObject go = testObstacle != null ? testObstacle : Obstacles[obstacleIndex];
-        Instantiate(go, pos, Quaternion.identity);
-        //if(go.GetComponent<HorizontalMover>())
-        //    go.GetComponent<HorizontalMover>().enabled = (UnityEngine.Random.value > 0.75f) || forceMoving;
+        GameObject spawned = Instantiate(go, pos, Quaternion.identity);
+        //if(spawned.GetComponent<HorizontalMover>())
+        //    spawned.GetComponent<HorizontalMover>().enabled = (UnityEngine.Random.value > 0.75f) || forceMoving;
         if (healthOne != 0)
         {
-            go.GetComponentsInChildren<Blocker>()[0].OverrideHealth(healthOne);
+            spawned.GetComponentsInChildren<Blocker>()[0].OverrideHealth(healthOne);
         }
 
         if (healthTwo != 0)
         {
-            go.GetComponentsInChildren<Blocker>()[1].OverrideHealth(healthTwo);
+            spawned.GetComponentsInChildren<Blocker>()[1].OverrideHealth(healthTwo);
         }
-       
+
     }
     
     /// <summary>
@@ -144,16 +144,16 @@ public class GameManager : MonoBehaviour
             obstacleIndex = UnityEngine.Random.Range(0, Obstacles.Length);
         }
         GameObject go = testObstacle != null ? testObstacle : Obstacles[obstacleIndex];
-        Instantiate(go, pos, Quaternion.identity);
-        //if(go.GetComponent<HorizontalMover>())
-        //    go.GetComponent<HorizontalMover>().enabled = (UnityEngine.Random.value > 0.75f) || forceMoving;
+        GameObject spawned = Instantiate(go, pos, Quaternion.identity);
+        //if(spawned.GetComponent<HorizontalMover>())
+        //    spawned.GetComponent<HorizontalMover>().enabled = (UnityEngine.Random.value > 0.75f) || forceMoving;
         if (gateOne != 0)
         {
-            go.GetComponentsInChildren<Gate>()[0].SetValue(gateOne, overrideGateTypeOne, overrideGateMaterialOne);
+            spawned.GetComponentsInChildren<Gate>()[0].SetValue(gateOne, overrideGateTypeOne, overrideGateMaterialOne);
         }
         if (gateTwo != 0)
         {
-            go.GetComponentsInChildren<Gate>()[1].SetValue(gateTwo, overrideGateTypeTwo, overrideGateMaterialTwo);
+            spawned.GetComponentsInChildren<Gate>()[1].SetValue(gateTwo, overrideGateTypeTwo, overrideGateMaterialTwo);
         }
     }
 }
