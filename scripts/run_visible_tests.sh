@@ -21,13 +21,10 @@ fi
 
 UNITY_EDITOR="${UNITY_EDITOR:-}"
 if [[ -z "$UNITY_EDITOR" ]]; then
-  for candidate in     "/Applications/Unity/Hub/Editor/${UNITY_VERSION}/Unity.app/Contents/MacOS/Unity"     "/Applications/Unity/Unity.app/Contents/MacOS/Unity"
-  do
-    if [[ -x "$candidate" ]]; then
-      UNITY_EDITOR="$candidate"
-      break
-    fi
-  done
+  candidate="/Applications/Unity/Hub/Editor/${UNITY_VERSION}/Unity.app/Contents/MacOS/Unity"
+  if [[ -x "$candidate" ]]; then
+    UNITY_EDITOR="$candidate"
+  fi
 fi
 
 if [[ -z "$UNITY_EDITOR" || ! -x "$UNITY_EDITOR" ]]; then
@@ -44,7 +41,14 @@ fi
 mkdir -p "$RESULTS_DIR" "$LOG_DIR"
 
 echo "Running Unity EditMode tests with: $UNITY_EDITOR"
-"$UNITY_EDITOR"   -batchmode   -nographics   -projectPath "$ROOT_DIR"   -runTests   -testPlatform EditMode   -testResults "$RESULTS_FILE"   -logFile "$LOG_FILE"
+"$UNITY_EDITOR" \
+  -batchmode \
+  -nographics \
+  -projectPath "$ROOT_DIR" \
+  -runTests \
+  -testPlatform EditMode \
+  -testResults "$RESULTS_FILE" \
+  -logFile "$LOG_FILE"
 
 if [[ ! -s "$RESULTS_FILE" ]]; then
   echo "Unity exited without writing EditMode test results: $RESULTS_FILE" >&2

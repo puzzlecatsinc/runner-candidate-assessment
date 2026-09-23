@@ -1,163 +1,40 @@
-# Runner Engineering Challenge
+# Runner engineering assessment
 
-This repository is a Unity runner-game codebase used for a focused engineering assessment. The goal is not to rebuild the game or polish visuals. The goal is to show how you work inside an existing Unity project: read the code, make a small production-quality improvement, optimize for real mobile performance, find production issues that only show up on device, test it, explain the tradeoffs, and demonstrate how you use AI/agents without losing engineering judgment.
+Make this runner more fun to play on a phone. Choose one worthwhile improvement, build it, and take it through testing and an on-device build. You decide the details: a new mechanic, a better choice during a run, pacing, controls, or feedback are all fair game.
 
-## Assignment
+Spend **4–6 hours**, excluding tool installation and initial setup. Keep it small, make reasonable assumptions, and tell us what you left out. Changes to code, scenes, prefabs, and UI are welcome. Reuse the supplied assets; custom art is not expected.
 
-Start here:
+## What we expect
 
-1. Read `ISSUE.md` for the task and acceptance criteria.
-2. Set up your own private submission repository using the instructions below.
-3. Inspect the existing Unity scripts before changing code.
-4. Identify the likely performance and production-risk touchpoints before implementation.
-5. Make a focused implementation in the existing runner game code.
-6. Add tests that prove the behavior you changed.
-7. Build and run the game on a physical mobile device.
-8. Complete `APPROACH.md` with decisions, validation evidence, AI/tool usage, and agent workflow artifacts.
-9. If you use coding agents, include the workflow artifacts described in `docs/AGENT_WORKFLOW.md`.
+- **A finished improvement.** We should be able to discover it, play with touch controls, finish or lose, and retry. Check several runs and background/resume.
+- **Attention to mobile performance.** This prototype has runtime issues. Investigate and improve one, which can be part of your feature. Choose a frame-rate target and show a before/after measurement on the same phone with comparable settings and gameplay load. Include a busy section; record the scenario, duration, and a profiler capture or equivalent evidence. Explain any limits to your results.
+- **Reliable code.** Add automated tests for your changes, including a meaningful edge or failure case. Keep existing tests passing unless you intentionally change the behavior. Record manual checks and known problems.
+- **AI-assisted work you understand.** Use an AI coding tool during the assessment. Choose where it helps and check its output. Briefly explain what it contributed and one example of how you verified or corrected it. No chat transcripts or special workflow documents are needed. Contact us beforehand if tool access is a problem.
 
-Recommended timebox: **2-3 hours**. If you hit the timebox, stop cleanly and document what is done vs. what remains.
+You do not need to fix every issue in the starter. Prioritize, and explain your choices. We will review gameplay judgment, device delivery, measured performance, code quality, testing, and your understanding of the work. More features or extra hours do not earn extra credit.
 
-## Submission repository setup
+## Get started
 
-Repository setup is part of the assessment. Follow these instructions exactly so every candidate submission is private, reviewable, and isolated from other candidates.
+1. Open the project in **Unity 6000.3.3f1**, with Android or iOS build support. Choose one platform.
+2. Open `Assets/Crowd Runner Kit/Scenes/Game Scene.unity` (already included in build settings). Gameplay code and existing tests are under `Assets/Crowd Runner Kit/`.
+3. Build and launch the starter on a physical phone before beginning the timebox. Contact us if setup fails or you need a device or another arrangement.
+4. Create a **private GitHub repository** from the starter. Keep the starter as your base, invite the reviewers from your assessment email, and work on a branch.
 
-You should **not** work in a shared candidate branch. You should submit from your own private GitHub repository.
-
-Required setup:
-
-1. Create a new **private** repository under your own GitHub account.
-2. Name it clearly, for example `runner-assessment-your-name`.
-3. Copy this starter repository into your private repository. Either:
-   - use GitHub's **Use this template** flow if it is available, or
-   - clone this starter repo, create your private repo, change `origin`, and push the starter code there.
-4. Invite the reviewer GitHub usernames provided in the assessment email with at least **Write** access.
-5. Create a branch named `candidate/<your-name>`.
-6. Complete the assessment on that branch.
-7. Open a pull request from `candidate/<your-name>` into `main` in your private repository.
-8. Send us both the private repository URL and the pull request URL.
-
-Rules:
-
-- Your submission repository must remain **private**. A public repository submission is incomplete.
-- Do not invite or share your repository with other candidates.
-- Do not submit by pushing to a shared assessment repo.
-- Do not send a zip file unless we explicitly request it because GitHub access is blocked.
-- If setup fails, document the exact blocker and contact us before doing the implementation work.
-
-
-## What we are evaluating
-
-We are not looking for the most code. We are looking for high judgment-per-token:
-
-- Can you understand an existing codebase quickly?
-- Can you make a small, correct, maintainable change?
-- Can you verify behavior with evidence instead of vibes?
-- Can you improve performance without speculative rewrites?
-- Can you catch production/device issues that do not appear in editor-only testing?
-- Can you use AI/agents as leverage without blindly trusting them?
-- Can you leave behind workflow artifacts that make future work easier, reviewable, and reproducible?
-
-## AI/tool policy
-
-AI assistants and coding agents are allowed and encouraged. We care about whether you can use tools responsibly, not whether you can pretend they do not exist.
-
-Rules:
-
-- You may use AI for code reading, implementation help, test ideas, debugging, review, and documentation.
-- You must understand and be able to explain every submitted change without tool assistance.
-- Do not paste in broad rewrites you cannot justify.
-- Disclose meaningful AI/tool usage in `APPROACH.md`.
-- If you run agents, include the agent instructions, task briefs, plans, review notes, or equivalent markdown artifacts you used.
-- Validate outputs with tests, logs, or direct Unity/editor evidence.
-
-## Agent workflow requirement
-
-If you use agents such as Claude Code, Codex, Cursor agents, OpenCode, or similar tools, submit an `agent-workflow/` folder or equivalent markdown files. See `docs/AGENT_WORKFLOW.md` for the expected shape.
-
-Example artifact set:
-
-```text
-agent-workflow/
-  AGENTS.md
-  PLAN.md
-  AI_USAGE.md
-  REVIEW.md
-  VALIDATION.md
-```
-
-You do not need to use these exact filenames if your workflow has an equivalent structure. We are not grading prompt polish. We are grading whether your workflow made the work more reliable, reviewable, and reproducible.
-
-## Project setup
-
-- Unity version: **6000.3.3f1**
-- Open the Unity project at this repository root.
-- Main game scene: `Assets/Crowd Runner Kit/Scenes/Game Scene.unity`
-- Main gameplay scripts:
-  - `Assets/Crowd Runner Kit/Scripts/PlayerController.cs`
-  - `Assets/Crowd Runner Kit/Scripts/Gate.cs`
-  - `Assets/Crowd Runner Kit/Scripts/GameManager.cs`
-  - `Assets/Crowd Runner Kit/Scripts/Runner.cs`
-
-This repo intentionally includes third-party/sample assets. You should not need to edit them for this challenge.
-
-## Physical-device run required
-
-You must create a development build, install it on a physical mobile device, and run through the relevant gameplay path on device. Editor-only validation, simulator-only validation, and “it compiled” are not enough for this assessment.
-
-Include evidence in `APPROACH.md`:
-
-- Platform and device model/OS version.
-- Build type and Unity build settings used.
-- Build/install result, with log path or copied command output where available.
-- A screenshot, short recording, or clear written reproduction notes from the on-device run.
-- Runtime logs from Android `logcat`, Xcode device console, or Unity player logs where available.
-- Performance observations: FPS/jank, obvious GC spikes, memory pressure, loading stalls, touch/input responsiveness, or other device-only symptoms.
-- Production issues found, fixed, or explicitly triaged.
-
-If you do not have access to a physical device, tell us before starting. A final submission without on-device evidence is incomplete.
-
-## Visible checks
-
-Run the lightweight repo/doc smoke check:
+Run tests in Unity's Test Runner, or use a Bash-compatible shell:
 
 ```bash
-scripts/smoke_check.sh
+bash scripts/smoke_check.sh
+bash scripts/run_visible_tests.sh
 ```
 
-Run Unity EditMode tests:
+The test script finds the matching Unity version in its standard macOS Hub location. Otherwise set `UNITY_EDITOR` to the editor executable. Run any additional PlayMode tests in Unity. The smoke check only checks repository hygiene.
 
-```bash
-scripts/run_visible_tests.sh
-```
+## Send us
 
-If Unity is installed somewhere non-standard, set `UNITY_EDITOR`:
+- A pull request against the starter in your private repository.
+- An Android build or an agreed iOS installation route, shared privately, plus a short recording of your change and the start/play/end/retry loop on a physical phone.
+- [APPROACH.md](APPROACH.md), completed with brief notes and links to your test and performance evidence.
 
-```bash
-UNITY_EDITOR="/path/to/Unity.app/Contents/MacOS/Unity" scripts/run_visible_tests.sh
-```
+Keep build binaries, Unity caches, local IDE files, and signing credentials out of Git. Include `.meta` files with changed assets.
 
-Then perform the required physical-device build/run and document the evidence in `APPROACH.md`.
-
-## Submission requirements
-
-Submit a pull request in your own private repository containing:
-
-- Your focused code changes.
-- EditMode tests for the behavior you changed.
-- Completed `APPROACH.md`, including your private repo/PR setup checklist.
-- On-device build/run evidence and a short production/performance issue report.
-- Agent workflow artifacts if you used agents, or a short note if you used AI only interactively.
-- Validation evidence: command output, logs, screenshots, recordings, or exact environment blockers.
-- No generated Unity cache/build files (`Library/`, `Temp/`, `Logs/`, `UserSettings/`, `.csproj`, `.sln`, etc.).
-
-After opening the pull request, send us:
-
-1. Private repository URL.
-2. Pull request URL.
-3. Device used for physical validation.
-4. Any setup or validation blockers.
-
-## Evaluation
-
-See `docs/CANDIDATE_RUBRIC.md` for the public scoring rubric. In short: small, correct, tested, explainable, and reproducible beats ambitious and unverified.
+We will spend about 40 minutes playing the game and discussing your decisions, tests, and measurements. We may ask you to work through a small change to your feature using your usual tools.

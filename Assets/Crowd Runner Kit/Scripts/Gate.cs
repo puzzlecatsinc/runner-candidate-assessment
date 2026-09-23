@@ -1,9 +1,6 @@
 using UnityEngine;
 using TMPro;
 
-/// <summary>
-/// The type of gate
-/// </summary>
 public enum GateType
 {
     MULTIPLY,
@@ -11,10 +8,6 @@ public enum GateType
     ADD,
     NOOVERRIDE
 }
-
-/// <summary>
-/// Represents a mathematic gate
-/// </summary>
 public class Gate : MonoBehaviour
 {
     [SerializeField] private GateType Type;
@@ -23,15 +16,7 @@ public class Gate : MonoBehaviour
     public bool Activated = false;
     public Animator gateEnterAnim;
 
-    /// <summary>
-    /// Initializes the gate and updates its label at spawn
-    /// </summary>
-    private void Start()
-    {
-        //SetValue();
-    }
-
-    public void SetValue(int overrideValue=0, GateType overrideGateType=GateType.NOOVERRIDE, Material overrideMaterial=null)
+    public void SetValue(int overrideValue = 0, GateType overrideGateType = GateType.NOOVERRIDE, Material overrideMaterial = null)
     {
         if (overrideGateType != GateType.NOOVERRIDE)
         {
@@ -47,7 +32,7 @@ public class Gate : MonoBehaviour
             case GateType.DIVIDE:
                 int randDivide = UnityEngine.Random.Range(0, 6);
 
-                switch(randDivide)
+                switch (randDivide)
                 {
                     case 5:
                         Value = 10;
@@ -71,8 +56,7 @@ public class Gate : MonoBehaviour
                 {
                     Value = overrideValue;
                 }
-                //this.GetComponent<Renderer>().material.color = new Color(255, 78, 0, 128);
-            
+
                 label.text = $"÷ {Value}";
                 break;
             case GateType.MULTIPLY:
@@ -101,7 +85,6 @@ public class Gate : MonoBehaviour
                 {
                     Value = overrideValue;
                 }
-                //this.GetComponent<Renderer>().material.color = new Color(0, 165, 255, 128);
                 label.text = $"x {Value}";
                 break;
             case GateType.ADD:
@@ -138,31 +121,24 @@ public class Gate : MonoBehaviour
                 if (Value > 0)
                 {
                     label.text = $"+ {Value}";
-                    //this.GetComponent<Renderer>().material.color = new Color(0, 165, 255, 128);
                 }
                 else
                 {
                     label.text = $"- {Mathf.Abs(Value)}";
-                    //this.GetComponent<Renderer>().material.color = new Color(255, 78, 0, 128);
                 }
                 break;
             default:
                 break;
-            
         }
     }
 
-    /// <summary>
-    /// Handle collision with runners in the crowd
-    /// </summary>
-    /// <param name="other">The collider collided with</param>
     private void OnTriggerEnter(Collider other)
     {
         if (Activated) return;
 
         if (other.gameObject.tag == "Player")
         {
-            switch(Type)
+            switch (Type)
             {
                 case GateType.DIVIDE:
                     PlayerController.Instance.DivideCharacters(Value);

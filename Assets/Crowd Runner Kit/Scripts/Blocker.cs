@@ -1,11 +1,7 @@
 using UnityEngine;
 using TMPro;
 using System.Collections;
-using Unity.VisualScripting;
 
-/// <summary>
-/// Represents a blocker obstacle
-/// </summary>
 public class Blocker : MonoBehaviour
 {
     private AudioSource audioSource;
@@ -15,14 +11,10 @@ public class Blocker : MonoBehaviour
     public int shootSpeed;
     public GameObject projectile;
     public Sprite towerSprite;
-    /// <summary>
-    /// Increment the number of enemies at spawn and set the health
-    /// </summary>
+
     void Start()
     {
         GameManager.Instance.NumEnemies++;
-        //Health = UnityEngine.Random.Range(3, 11);
-        //labelHealth.text = Health.ToString();
         audioSource = GetComponent<AudioSource>();
     }
 
@@ -31,10 +23,7 @@ public class Blocker : MonoBehaviour
         Health = overrideHealth;
         labelHealth.text = Health.ToString();
     }
-    /// <summary>
-    /// Handles the taking of damage
-    /// </summary>
-    /// <param name="amount">The amount of damage done</param>
+
     public void TakeDamage(int amount)
     {
         if (Health <= 0) return;
@@ -50,9 +39,6 @@ public class Blocker : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// Handles the blocker dying
-    /// </summary>
     private void Die()
     {
         GameManager.Instance.NumEnemies--;
@@ -62,10 +48,6 @@ public class Blocker : MonoBehaviour
         PlayerController.Instance.UpdateShooting(shootSpeed, projectile, towerSprite);
     }
 
-    /// <summary>
-    /// Shrinks the blocker
-    /// </summary>
-    /// <param name="duration">Duration of shrink</param>
     IEnumerator Shrink(float duration)
     {
         float elapsedTime = 0f;

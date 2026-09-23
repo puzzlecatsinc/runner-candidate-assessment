@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Crowd Runner Kit/Scenes/Game Scene.unity
+    guid: 9b19bff1a250d4bf6a8eff3ebf60df85
   m_configObjects: {}

@@ -63,3 +63,7 @@ release_local_BackUpThisFolder_ButDontShipItWithYourGame/**
 release_local_BurstDebugInformation_DoNotShip/**
 debug_BackUpThisFolder_ButDontShipItWithYourGame/**
 debug_BurstDebugInformation_DoNotShip/**
+
+# Local assessment administration and generated test reports
+/assessment-internal/
+/TestResults/

@@ -6,11 +6,8 @@ cd "$ROOT_DIR"
 
 required_files=(
   "README.md"
-  "ISSUE.md"
   "APPROACH.md"
-  "docs/APPROACH_TEMPLATE.md"
-  "docs/AGENT_WORKFLOW.md"
-  "docs/CANDIDATE_RUBRIC.md"
+  "scripts/run_visible_tests.sh"
   "ProjectSettings/ProjectVersion.txt"
   "Packages/manifest.json"
   "Assets/Crowd Runner Kit/Scripts/PlayerController.cs"
@@ -30,56 +27,6 @@ if ! grep -q "6000.3.3f1" ProjectSettings/ProjectVersion.txt; then
   exit 1
 fi
 
-if ! grep -q "Make Runner Crowd Math Testable" ISSUE.md; then
-  echo "ISSUE.md does not appear to describe the runner crowd-math challenge." >&2
-  exit 1
-fi
-
-if ! grep -q "Agent workflow requirement" README.md; then
-  echo "README.md does not appear to include the agent workflow requirement." >&2
-  exit 1
-fi
-
-if ! grep -q "Submission repository setup" README.md; then
-  echo "README.md does not appear to include the private submission repository setup requirement." >&2
-  exit 1
-fi
-
-if ! grep -q "private GitHub submission repository" ISSUE.md; then
-  echo "ISSUE.md does not appear to include the private submission repository requirement." >&2
-  exit 1
-fi
-
-if ! grep -q "Private repository URL" APPROACH.md; then
-  echo "APPROACH.md does not appear to include the submission setup checklist." >&2
-  exit 1
-fi
-
-if ! grep -q "submission hygiene" docs/CANDIDATE_RUBRIC.md; then
-  echo "docs/CANDIDATE_RUBRIC.md does not appear to include submission setup/hygiene scoring." >&2
-  exit 1
-fi
-
-if ! grep -q "Physical-device run required" README.md; then
-  echo "README.md does not appear to include the physical-device run requirement." >&2
-  exit 1
-fi
-
-if ! grep -q "Build and run on a physical device" ISSUE.md; then
-  echo "ISSUE.md does not appear to include the on-device build/run requirement." >&2
-  exit 1
-fi
-
-if ! grep -q "Performance and on-device production readiness" docs/CANDIDATE_RUBRIC.md; then
-  echo "docs/CANDIDATE_RUBRIC.md does not appear to include the performance/on-device rubric." >&2
-  exit 1
-fi
-
-if ! grep -q "Agent Workflow Expectations" docs/AGENT_WORKFLOW.md; then
-  echo "docs/AGENT_WORKFLOW.md does not appear to include the expected agent workflow guidance." >&2
-  exit 1
-fi
-
 tracked_generated=$(git ls-files | grep -E '(^|/)(Library|Temp|Logs|UserSettings|obj)/|\.csproj$|\.sln$' || true)
 if [[ -n "$tracked_generated" ]]; then
   echo "Generated Unity/IDE files are tracked and should not be submitted:" >&2
@@ -87,6 +34,7 @@ if [[ -n "$tracked_generated" ]]; then
   exit 1
 fi
 
-git diff --check -- README.md ISSUE.md APPROACH.md docs/APPROACH_TEMPLATE.md docs/AGENT_WORKFLOW.md docs/CANDIDATE_RUBRIC.md scripts/run_visible_tests.sh scripts/smoke_check.sh
+git diff --check
 
-echo "Smoke check passed. Run scripts/run_visible_tests.sh for Unity EditMode tests."
+echo "Repository hygiene check passed. This does not validate gameplay or the device build."
+echo "Run bash scripts/run_visible_tests.sh for Unity EditMode tests."
