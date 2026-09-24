@@ -2,9 +2,17 @@
 
 Keep this to about one page. Link longer logs and captures; mark anything you could not verify.
 
+## First impressions
+
+Before making changes, list a few things that feel **fun** and a few that feel **unfun**, with a specific moment and reason for each.
+
 ## The change
 
 What did you improve and why? Note assumptions, the main tradeoff, what you left out, and time spent (setup separately).
+
+## Ticket reply
+
+Reply to RUN-17: what did you find, what evidence supports it, and what would you do next? Note questions you asked or assumptions you made, and anything still unconfirmed.
 
 ## Try it
 

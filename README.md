@@ -4,6 +4,20 @@ Make this runner more fun to play on a phone. Choose one worthwhile improvement,
 
 Spend **4–6 hours**, excluding tool installation and initial setup. Keep it small, make reasonable assumptions, and tell us what you left out. Changes to code, scenes, prefabs, and UI are welcome. Reuse the supplied assets; custom art is not expected.
 
+## Play it first
+
+Before changing anything, write two short lists: **what feels fun** and **what feels unfun**. Give specific moments and explain why. A few bullets each is enough; use these observations to choose your improvement.
+
+Ask us questions by replying to the assessment email—we encourage it. Treat us like teammates when something is unclear. If you're waiting for an answer, record your assumption and continue where you can; waiting for a reply doesn't count toward the timebox.
+
+## A ticket from the backlog
+
+This is a fictional report for the exercise. Investigate it and leave a short reply with your findings and next step. A fix can be your chosen gameplay improvement; we aren't asking for a second feature.
+
+> **RUN-17 · Crowd numbers look off**
+>
+> Went through a couple of gates, then hit something. Couldn't tell how many runners I had left. The numbers don't seem to match what's happening. Can someone take a look?
+
 ## What we expect
 
 - **A finished improvement.** We should be able to discover it, play with touch controls, finish or lose, and retry. Check several runs and background/resume.
@@ -11,7 +25,7 @@ Spend **4–6 hours**, excluding tool installation and initial setup. Keep it sm
 - **Reliable code.** Add automated tests for your changes, including a meaningful edge or failure case. Keep existing tests passing unless you intentionally change the behavior. Record manual checks and known problems.
 - **AI-assisted work you understand.** Use an AI coding tool during the assessment. Choose where it helps and check its output. Briefly explain what it contributed and one example of how you verified or corrected it. No chat transcripts or special workflow documents are needed. Contact us beforehand if tool access is a problem.
 
-You do not need to fix every issue in the starter. Prioritize, and explain your choices. We will review gameplay judgment, device delivery, measured performance, code quality, testing, and your understanding of the work. More features or extra hours do not earn extra credit.
+You do not need to fix every issue in the starter. Prioritize, and explain your choices. We will review gameplay judgment, investigation and communication, device delivery, measured performance, code quality, testing, and your understanding of the work. More features or extra hours do not earn extra credit.
 
 ## Get started
 
